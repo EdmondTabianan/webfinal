@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Animation with Content</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #282c34;
+            margin: 0;
+            color: white;
+        }
+
+        .typing-container {
+            position: relative;
+            font-size: 2rem;
+            display: inline-block;
+            white-space: nowrap;
+        }
+
+        .typing-container::before {
+            content: "";
+            display: inline-block;
+            animation: typing 4s steps(10) 1s infinite forwards; /* Infinite typing animation */
+        }
+
+        @keyframes typing {
+            0% {
+            content: "H|";
+        }
+        6% {
+            content: "H ";
+        }
+        12% {
+            content: "He|";
+        }
+        18% {
+            content: "He ";
+        }
+        24% {
+            content: "Hel|";
+        }
+        30% {
+            content: "Hel ";
+        }
+        36% {
+            content: "Hell|";
+        }
+        42% {
+            content: "Hell";
+        }
+        48% {
+            content: "Hello|";
+        }
+        54% {
+            content: "Hello ";
+        }
+        60% {
+            content: "Hello |";
+        }
+        66% {
+            content: "Hello ";
+        }
+        72% {
+            content: "Hello W|";
+        }
+        78% {
+            content: "Hello W ";
+        }
+        84% {
+            content: "Hello Wo|";
+        }
+        90% {
+            content: "Hello Wo ";
+        }
+        94% {
+            content: "Hello Wor|";
+        }
+        96% {
+            content: "Hello Wor ";
+        }
+        100% {
+            content: "Hello World|";
+        }
+
+    }
+
+    </style>
+</head>
+<body>
+    <div class="typing-container"></div>
+</body>
+</html>

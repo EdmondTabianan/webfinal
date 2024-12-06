@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+.g{
+    height: 75vh;
+    background-color: blueviolet;
+    justify-content: center;
+    justify-items: center;
+    padding: 50px 0;
+}
+
+.h{
+    justify-content: center;
+    width: 200px;
+}
+
+.typing-container {
+    position: relative;
+    font-size: 2rem;
+    display: inline-block;
+    white-space: nowrap;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.typing-container::before {
+    content: "";
+    display: inline-block;
+    animation: typing 2s steps(5) 1s infinite forwards; /* Infinite typing animation */
+}
+
+@keyframes typing {
+    0% {
+        content: "|";
+    }
+    7% {
+        content: "D|";
+    }
+    14%{
+        content: "D";
+    }
+    21%{
+        content: "DA|";
+    }
+    28%{
+        content: "DA";
+    }
+    35%{
+        content: "DAT|";
+    }
+    42%{
+        content: "DAT";
+    }
+    49%{
+        content: "DATA|";
+    }
+    56%{
+        content: "DATA";
+    }
+    63%{
+        content: "DATAM|";
+    }
+    70%{
+        content: "DATAM";
+    }
+    77%{
+        content: "DATAME";
+    }
+    84%{
+        content: "DATAME|";
+    }
+    91%{
+        content: "DATAME";
+    }
+    98%{
+        content: "DATAMEX|";
+    }
+    100%{
+        content: "DATAMEX";
+    }
+}

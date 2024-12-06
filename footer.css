@@ -1,0 +1,27 @@
+footer {
+    background-color: rgb(74, 74, 201);
+    height: 25vh;
+}
+
+footer p {
+    color: #1b1b1b;
+}
+
+footer h1{
+    color: #1b1b1b;
+}
+.containers{
+    display: flex;
+}
+.containers h1 {
+    font-size: 2rem;
+    padding: 10px;
+    color: #fff;
+}
+
+.containers p {
+    font-size: 1rem;
+    width: 400px;
+    margin: 50px 20px 20px 0;
+    color: #fff;
+}

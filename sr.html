@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="test.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="sr.css">
+    <link rel="icon" href="Sample images/Package/LUGO.png">
+</head>
+<header>
+    <img src="Sample images/Package/LUGO.png" alt="logo" class="imga">
+    <nav>
+        <button class="hamburger" id="hamburger">&#9776;</button>
+        <ul id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About DCSA</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#">Programs</a></li>
+            <li class="dropdown">
+                <a href="#">Admission</a>
+                <ul class="dropdown-menu">
+                    <li><a href="test.html">College</a></li>
+                    <li><a href="sr.html">Sr High School</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>    
+    
+</header>
+<body>
+    <div class="container">
+        <section class="reg_1">
+            <form id="registrationForm">
+                <span class="he">Registration</span>
+
+                <p>Branch:</p>
+                <select id="branch" name="branch" required>
+                    <option value="">Select Branch</option>
+                    <option value="Fairview">Fairview</option>
+                    <option value="Valenzuela">Valenzuela</option>
+                    <option value="Caloocan">Caloocan</option>
+                    <option value="Meycauayan">Meycauayan</option>
+                </select>
+
+                <p>Strand:</p>
+                <select id="strand" name="strand" required>
+                    <option value="">Select Strand</option>
+                    <option value="ICT">ICT (Information and Communications Technology)</option>
+                    <option value="HUMSS">HUMSS (Humanities and Social Sciences)</option>
+                    <option value="HE">HE (Home Economics)</option>
+                    <option value="STEM">STEM (Science, Technology, Engineering, and Mathematics)</option>
+                    <option value="ABM">ABM (Accountancy, Business, and Management)</option>
+                    <option value="GAS">GAS (General Academic Strand)</option>
+                </select>
+
+
+                <span class="button">
+                    <input type="button" value="Next" onclick="showReg2()">
+                </span>
+            </form>
+        </section>
+
+        <section class="reg_2" style="display: none;">
+            <form id="personalInfoForm">
+                <span class="he">Personal Information</span>
+
+                <p>Name:</p>
+                <input type="text" placeholder="Full Name" required>
+
+                <p>Address:</p>
+                <input type="text" placeholder="Address" required>
+
+                <p>Contact No:</p>
+                <input type="text" placeholder="Contact Number" required>
+
+                <p>Email Address:</p>
+                <input type="email" placeholder="Email Address" required>
+
+                <p>Birthdate:</p>
+                <input type="date" placeholder="Birthdate" required>
+
+                <p>Gender:</p>
+                <select id="gender" name="gender" required>
+                    <option value="">Select Gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+
+                <span class="button">
+                    <input type="button" value="Previous" onclick="showReg1()">
+                    <input type="submit" value="Submit">
+                </span>
+            </form>
+        </section>
+    </div>
+
+    <div id="customAlert" class="alert-modal">
+        <div class="alert-modal-content">
+            <span id="alert-close" class="close-btn">&times;</span>
+            <p id="alert-message"></p>
+        </div>
+    </div>
+    
+
+    <script>
+         function showReg2() {
+             let branch = document.getElementById('branch').value;
+             let program = document.getElementById('strand').value;
+
+             if (branch === "" || program === "") {
+                 alert("Please select both Branch and Strand.");
+             } else {
+                 document.querySelector('.reg_1').style.display = 'none';
+                 document.querySelector('.reg_2').style.display = 'block';
+             }
+         }
+
+         function showReg1() {
+             document.querySelector('.reg_2').style.display = 'none';
+             document.querySelector('.reg_1').style.display = 'block';
+         }
+
+         function validateReg1() {
+             let branch = document.getElementById('branch').value;
+             let program = document.getElementById('strand').value;
+
+             if (branch === "" || program === "") {
+                 alert("Please select both Branch and Strand.");
+                 return false;
+             }
+             return true;
+         }
+
+         function validatePersonalInfo() {
+             let gender = document.getElementById('gender').value;
+
+             if (gender === "") {
+                 alert("Please select your Gender.");
+                 return false;
+             }
+
+             return true;
+        }
+
+        //dito
+
+        // Show the custom alert
+// function showCustomAlert(message) {
+//     // Set the message to the custom alert
+//     document.getElementById('alert-message').textContent = message;
+//     // Display the modal
+//     document.getElementById('customAlert').style.display = 'block';
+// }
+
+// // Close the custom alert
+// document.getElementById('alert-close').onclick = function() {
+//     document.getElementById('customAlert').style.display = 'none';
+// }
+
+// // Modified validation function with custom alert
+// function validateReg1() {
+//     let branch = document.getElementById('branch').value;
+//     let program = document.getElementById('strand').value;
+
+//     if (branch === "" || program === "") {
+//         showCustomAlert("Please select both Branch and Strand.");
+//         return false;
+//     }
+//     return true;
+// }
+
+// function validatePersonalInfo() {
+//     let gender = document.getElementById('gender').value;
+
+//     if (gender === "") {
+//         showCustomAlert("Please select your Gender.");
+//         return false;
+//     }
+
+//     return true;
+// }
+    </script>
+</body>
+<footer>
+    <div class="containers">
+        <h1>Contact:</h1>
+        <p>
+            •  Fairview Branch 
+            Address: 85 Winston Street, Commonwealth Avenue, Barangay Fairview, Quezon City
+            Contact: 8921-8350
+        </p>
+        <p>
+            •  Valenzuela Branch
+            Address: 32 Gotaco Bldg. II, McArthur Highway, Marulas, Valenzuela City
+            <br>
+            Contact: 829-27536
+        </p>
+        <p>
+            •  Caloocan Branch
+            Address: #357 J. Teodoro Street Corner 10th Avenue, Barangay 62, Caloocan City
+            <br>
+            Contact: 83661970 / 83673208
+        </p>
+        <p>
+            •  Meycauayan Branch
+            Address: Datamex Building, Brgy. Saluysoy, Ngusong Buwaya Street, Meycauayan, Bulacan 
+            Contact: 0951-2965086
+        </p>
+    </div>
+</footer>
+</html>

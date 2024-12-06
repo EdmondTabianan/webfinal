@@ -1,0 +1,46 @@
+Finals Create a  1 group 5 members 
+Website of the school 
+
+Navigation Bar 
+	Logo of the school
+	Home 
+		Hero 
+		Advertisment 
+		Announcement
+	AboutDCSA 
+		Details of the schools 
+		Brief History of the school 
+		Owners
+		Partnership
+	Contact 
+		each branch 
+			contact number
+			address 
+	Program	
+		College
+			ACT
+			BSIT
+			BSOA
+			BSHM
+			BSTM 
+		Shs
+			ict
+			he
+			humss
+			gas
+			stem
+			abm
+	Admmision 
+		Registration 
+footer 
+	copyright
+	social media links 
+
+
+
+
+
+
+
+
+
