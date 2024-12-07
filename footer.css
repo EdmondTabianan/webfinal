@@ -3,16 +3,15 @@ footer {
     height: 25vh;
 }
 
-footer p {
+footer p,
+footer h1 {
     color: #1b1b1b;
 }
 
-footer h1{
-    color: #1b1b1b;
-}
-.containers{
+.containers {
     display: flex;
 }
+
 .containers h1 {
     font-size: 2rem;
     padding: 10px;
@@ -23,5 +22,48 @@ footer h1{
     font-size: 1rem;
     width: 400px;
     margin: 50px 20px 20px 0;
+    color: #fff;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    margin-top: 39px;
+}
+
+.sub {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.section {
+    text-align: center;
+    margin: 0 10px;
+}
+
+.section h1 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.section p {
+    font-size: 14px;
+    margin: 5px 0;
+    color: #fff;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+.copyright p {
+    margin: 5px 0;
     color: #fff;
 }
