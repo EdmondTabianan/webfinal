@@ -4,55 +4,117 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HOME</title>
-    <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="home.css">
 </head>
-<body>
+<header>
+    <img src="Sample images/Package/LUGO.png" alt="logo" class="imga">
     <nav>
-        <img src="dcsa logo.jpg" class="imga">
-        <ul>
+        <button class="hamburger" id="hamburger">&#9776;</button>
+        <ul id="navLinks">
             <li><a href="index.html">Home</a></li>
-            <li><a href="#">About DCSA</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="about.html">About DCSA</a></li>
+            <li><a href="contact.html">Contact</a></li>
             <li><a href="#">Programs</a></li>
-            <li><a href="#">Admission</a></li>
+            <li class="dropdown">
+                <a href="#">Admission</a>
+                <ul class="dropdown-menu">
+                    <li><a href="test.html">College</a></li>
+                    <li><a href="sr.html">Sr High School</a></li>
+                </ul>
+            </li>
         </ul>
     </nav>
-   
-
-        
-        <video autoplay muted loop id="myVideo">
-          <source src="advertisment.mp4" type="video/mp4">
-          Your browser does not support HTML5 video.
-        </video>
-        <div class="hero-image">
-            <div class="hero-text">
-                <h1></h1>
-                <p></p>
-                <button class="ripple-button">Enroll Now</button>
+</header>
+<body>
+    
+    <div class="g">
+        <div class="h">
+            <div class="typing-container">  </div>
+        </div>
+    </div>
+    <video autoplay muted loop id="myVideo">
+        <source src="advertisment.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
+      <div class="hero-image">
+          <div class="hero-text">
+              <h1></h1>
+              <p></p>
+              <button class="ripple-button">Enroll Now</button>
+          </div>
+      </div>
+      
+      <section class="C">
+          <img src="dcsa ad.jpg" alt="" width="100%">
+          <img src="" alt="" width="100%">
+      </section>
+      
+      
+      <script>
+      var video = document.getElementById("myVideo");
+      var btn = document.getElementById("myBtn");
+      
+      function myFunction() {
+        if (video.paused) {
+          video.play();
+          btn.innerHTML = "Pause";
+        } else {
+          video.pause();
+          btn.innerHTML = "Play";
+        }
+      }
+      </script>
+</body>
+<footer>
+    <div class="containers">
+        <h1>Contact:</h1>
+        <p>
+            •  Fairview Branch 
+            Address: 85 Winston Street, Commonwealth Avenue, Barangay Fairview, Quezon City
+            Contact: 8921-8350
+        </p>
+        <p>
+            •  Valenzuela Branch
+            Address: 32 Gotaco Bldg. II, McArthur Highway, Marulas, Valenzuela City
+            <br>
+            Contact: 829-27536
+        </p>
+        <p>
+            •  Caloocan Branch
+            Address: #357 J. Teodoro Street Corner 10th Avenue, Barangay 62, Caloocan City
+            <br>
+            Contact: 83661970 / 83673208
+        </p>
+        <p>
+            •  Meycauayan Branch
+            Address: Datamex Building, Brgy. Saluysoy, Ngusong Buwaya Street, Meycauayan, Bulacan 
+            Contact: 0951-2965086
+        </p>
+    </div>
+    <div class="content">
+        <div class="sub">
+            <div class="section">
+                <h1>Program</h1>
+                <p>College</p>
+                <p>High School</p>
+            </div>
+            <div class="section">
+                <h1>Admission</h1>
+                <p>AWD</p>
+                <p>AWDAWD</p>
+            </div>
+            <div class="section">
+                <h1>Other Links</h1>
+                <p>AWDAW</p>
             </div>
         </div>
-        
-        <section class="C">
-            <img src="dcsa ad.jpg" alt="" width="100%">
-            <img src="" alt="" width="100%">
-        </section>
-        
-        
-        <script>
-        var video = document.getElementById("myVideo");
-        var btn = document.getElementById("myBtn");
-        
-        function myFunction() {
-          if (video.paused) {
-            video.play();
-            btn.innerHTML = "Pause";
-          } else {
-            video.pause();
-            btn.innerHTML = "Play";
-          }
-        }
-        </script>
-        
-</body>
+        <div class="copyright">
+            <p>&copy; 2024 Datamex College of Saint Adeline - All Rights Reserved</p>
+            <p>Developed by Group K</p>
+        </div>
+    </div>
+    
+</footer>
 </html>
